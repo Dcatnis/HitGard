@@ -1,0 +1,289 @@
+header,
+.min-header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+header {
+  background: #000;
+  padding: 10px 0;
+}
+.header-logo img{
+  width:230px;
+  height:41px;
+}
+header .my-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 780px) {
+  header .my-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  header .my-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1080px) and (max-width: 780px) {
+  header .my-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+header .header .header-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header .header-flex .header-col-logo {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.333333333333336% - 30px);
+}
+@media screen and (max-width: 750px) {
+  header .header .header-flex .header-col-logo {
+    width: calc(66.66666666666667% - 30px);
+  }
+}
+header .header .header-flex .header-col-logo .header-logo {
+  width: 158px !important;
+}
+header .header .header-flex .header-col-menu {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(35% - 30px);
+  text-align: right !important;
+}
+@media screen and (max-width: 750px) {
+  header .header .header-flex .header-col-menu {
+    width: calc(16.666666666666668% - 30px);
+  }
+}
+@media screen and (max-width: 455px) {
+  header .header .header-flex .header-col-menu {
+    width: calc(8.333333333333334% - 30px);
+  }
+}
+header .header .header-flex .header-col-menu .header-menu ul {
+  display: flex;
+  align-items: center;
+}
+header .header .header-flex .header-col-menu .header-menu li {
+  width: 100px;
+  text-align: center;
+  position: relative;
+}
+header .header .header-flex .header-col-menu .header-menu li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  box-sizing: content-box;
+}
+header .header .header-flex .header-col-menu .header-menu li a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+header .header .header-flex .header-col-menu .header-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+header .header .header-flex .header-col-menu .header-menu li a:hover::after {
+  transform: scaleX(1);
+}
+@media screen and (max-width: 750px) {
+  header .header .header-flex .header-col-menu .header-menu {
+    display: none;
+  }
+}
+header .header .header-flex .header-col-menu .header-telefon-mb {
+  display: none;
+  background: url('../images/telefon-icon.png') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 750px) {
+  header .header .header-flex .header-col-menu .header-telefon-mb {
+    display: block;
+  }
+}
+header .header .header-flex .header-col-contact {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(16.666666666666668% - 30px);
+}
+header .header .header-flex .header-col-contact .header-contact {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 5px;
+}
+header .header .header-flex .header-col-contact .header-contact a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1080px) {
+  header .header .header-flex .header-col-contact .header-contact a {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 850px) {
+  header .header .header-flex .header-col-contact .header-contact a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 750px) {
+  header .header .header-flex .header-col-contact .header-contact {
+    display: none;
+  }
+}
+header .header .header-flex .header-col-contact .hamb-icons {
+  display: none;
+  background: url('../images/hamb.png') no-repeat;
+  width: 28px;
+  height: 24px;
+  cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+  header .header .header-flex .header-col-contact .hamb-icons {
+    display: block;
+  }
+}
+.min-header {
+  
+  position: absolute;
+  width: 300px;
+  background: #000;
+  z-index: 1000000;
+  top: 0;
+  left: -300px;
+  transition: 0.5s linear;
+  padding: 20px 0;
+}
+.min-header .min-h-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
+  margin: 0 20px;
+  border-bottom: 1px solid #fff;
+}
+.min-header .min-h-row .min-h-menu {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  align-items: center;
+}
+.min-header .min-h-row .min-h-close {
+  transform: rotate(45deg);
+  color: #fff;
+  font-size: 34px;
+  align-items: center;
+  cursor: pointer;
+}
+.min-header .min-h-block {
+  line-height: 50px;
+  padding: 0 20px;
+  margin-top: 33px;
+}
+.min-header .min-h-block .Dstyle{
+margin-top: 0px;
+}
+.min-header .min-h-block .header-min-phone{
+  display: block;
+  width: 100%;
+}
+
+.min-header .min-h-block a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.min-header .min-h-block .social-icons {
+  margin: 20px 0 20px 0;
+}
+.min-header .min-h-block .social-icons .social-flex {
+  display: flex;
+}
+.min-header .min-h-block .social-icons .header-min-phone {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.min-header.active {
+
+  position: fixed;
+  left: 0px;
+  top: 0;
+}
+
+.language{
+  position: relative;
+  font-weight: bold;
+ 
+}
+.langbtn{
+  color: black;
+  background-color: white;
+  width: 50px;
+  border: 1px solid black;
+
+}
+
+.langbtn:hover{
+  background-color: tomato;
+  cursor: pointer;
+}
+.langcontainer{
+  display: none;
+  color: black;
+  position: absolute;
+ background-color: rgb(133, 130, 130);
+ border: 1px solid black;
+
+}
+.langcontainer li{
+width: 50px;
+list-style: none;
+
+}
+.langcontainer li:hover{
+background-color: tomato;
+cursor: pointer;
+}
+.show{
+display: block;
+}

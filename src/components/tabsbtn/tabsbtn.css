@@ -1,0 +1,33 @@
+.my-wrapper{
+    max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tabs-flex{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -69px;
+    
+}
+.tabbtn{
+    flex: 1;
+    border-color: #dee2e6 #dee2e6 #fff;
+    background: #828282; 
+    padding: 25px 0px;
+    cursor: pointer;
+   
+}
+.tabbtn a{
+    color: #fff; 
+    
+}
+.tabbtn a:hover{
+    color:black;
+}
+
+
+
+

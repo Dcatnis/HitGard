@@ -1,0 +1,43 @@
+.bg {
+    position: relative;
+    margin-top: 50px;
+  }
+  .bg .bg-card {
+    background: url('../images/bg-gard.png') no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 192px;
+  }
+  .bg .btn-price {
+    position: absolute;
+    right: 20%;
+    top: 21%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.389058) -26.59%, #FFFFFF 22.85%, rgba(255, 255, 255, 0) 135.26%), #C4C4C4;
+    box-shadow: 0px 44px 29px -18px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (max-width: 850px) {
+    .bg .btn-price {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      top: 0;
+      left: 20%;
+      bottom: 0;
+      right: 20%;
+    }
+  }
+  .bg .btn-price .price {
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding-top: 11px;
+    margin: 65px;
+  }
+  @media screen and (max-width: 850px) {
+    .bg .btn-price .price {
+      margin: 0 auto;
+    }
+  }

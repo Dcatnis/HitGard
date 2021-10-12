@@ -1,0 +1,134 @@
+form {
+  
+    margin: auto; /* Ð’Ñ‹Ñ€Ð°Ð²Ð½Ð¸Ð²Ð°ÐµÐ¼ Ð¿Ð¾ Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ */
+    padding: 30px; /* ÐŸÐ¾Ð»Ñ Ð²Ð¾ÐºÑ€ÑƒÐ³ Ñ‚ÐµÐºÑÑ‚Ð° */
+   }
+   .row input {
+    width: 100%; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð¿Ð¾Ð»Ñ */
+    box-sizing: border-box; /* Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð½Ðµ ÑƒÑ‡Ð¸Ñ‚Ñ‹Ð²Ð°ÐµÑ‚ padding */
+    padding: 0.5rem 0; /* ÐŸÐ¾Ð»Ñ Ð²Ð¾ÐºÑ€ÑƒÐ³ Ñ‚ÐµÐºÑÑ‚Ð° */
+    border: none; /* Ð£Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ñ€Ð°Ð¼ÐºÑƒ */
+    border-bottom: 1px solid #868686; /* Ð›Ð¸Ð½Ð¸Ñ ÑÐ½Ð¸Ð·Ñƒ */
+    background: transparent; /* ÐŸÑ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ñ‹Ð¹ Ñ„Ð¾Ð½ */
+    height: 50px;
+    color:  #868686;
+   }
+   .row input:focus {
+    outline: none; /* Ð£Ð±Ð¸Ñ€Ð°ÐµÐ¼ ÐºÐ¾Ð½Ñ‚ÑƒÑ€ */
+    border-color: #fff; 
+   }
+   .row::placeholder {
+    display: block; /* Ð‘Ð»Ð¾Ñ‡Ð½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ */
+    color:  #868686; /* Ð¦Ð²ÐµÑ‚ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÐ¸ */
+    transform: translateY(-1.5rem); /* Ð¡Ð´Ð²Ð¸Ð³Ð°ÐµÐ¼ Ð²Ð²ÐµÑ€Ñ… */
+    line-height: 0.1rem; /* ÐœÐµÐ¶ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ñ‹Ð¹ Ð¸Ð½Ñ‚ÐµÑ€Ð²Ð°Ð» */
+    transition: 0.5s; /* Ð’Ñ€ÐµÐ¼Ñ Ñ‚Ñ€Ð°Ð½ÑÑ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ */ 
+   }
+   .row input:focus::placeholder, 
+   .row input:valid::placeholder { 
+    font-size: 10px; /* Ð Ð°Ð·Ð¼ÐµÑ€ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+    transform: translateY(-3.5rem); /* Ð¡Ð´Ð²Ð¸Ð³Ð°ÐµÐ¼ Ð²Ð²ÐµÑ€Ñ… */
+    /* opacity:0; */
+    color: #868686;
+   }
+  
+   textarea{
+     width:100%;
+     border-style:none;
+     border-bottom:1px solid #9C9C9C;
+   }
+
+
+
+   /* CHECKBOX */
+
+
+
+ /* container */
+label {
+    position: relative; /* to contain absolute elements */
+    padding-left:0px; /* free space for custom checkbox */
+    cursor: pointer;
+  }
+  /* hide default checkbox  */
+  label input[type=checkbox] {
+    position: absolute; /* prevent taking any space */
+    /* cross-browser hidingg */
+    opacity: 0;
+    width:0; 
+    height:0;
+  }
+  /* custom checkbox */
+  label span {
+    position: absolute;
+    /* position to the free space in <label> */
+    top:0;
+    left:0;
+    width:20px;
+    height:20px;
+    background-color: #ddd;
+    transition: .3s background-color; /* slight transition */
+  }
+  /* the check icon */
+  label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+    /* check icon */
+    left: 5px;
+    top: 3px;
+    width: 9px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  label:hover span {
+    background-color: #ccc;
+  }
+  /**** Here's the trick ***/
+  label input:checked ~ span {
+    background-color: transparent;
+  }
+  label input:checked ~ span:after {
+    display:block;
+  }
+  
+  .l-checkbox{
+    margin-left:-14px;
+    padding-left:30px;
+    margin-top:25px;
+    color:#868686;
+    font-size: 14px;
+   
+  }
+  .l-checkbox span{
+      border:1px solid #bbb;
+      
+    }
+  .form-button{
+    background:#000;
+    width:100%;
+    color:#fff;
+    padding:7px 0;
+    margin-top:25px;
+  }
+  
+  .modal-header{
+    padding-left:30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .has-error{
+    border-bottom: 1px solid red;
+  }
+  .not-error{
+    border-bottom: 1px solid green;
+  }
+
+  .row{
+    margin-bottom: 25px;
+  }
